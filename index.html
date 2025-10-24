@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigasi -->
+<div class="navigasi">
+    <div class="logo">
+        <h2>Biodataku</h2>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#hai">Hai</a></li>
+            <li><a href="#pendidikan">Pendidikan</a></li>
+            <li><a href="#softskill">Softskill</a></li>
+            <li><a href="#prestasi">Prestasi</a></li>
+            <li><a href="#video-perkenalan">Video Perkenalan</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+<!-- Banner -->
+<div class="banner" id="hai">
+    <img src="gambar/yusup1.jpg" alt="Foto Profil">
+    <h1>Hai... <span></span></h1>
+    <p>Haloo apa kabar semuanya? Semoga kalian sehat selalu</p>
+    <a href="#"><button>Selengkapnya</button></a>
+</div>
+
+<!-- Pendidikan -->
+<div class="box-pendidikan" id="pendidikan">
+    <h1>Riwayat Pendidikan</h1>
+    <div class="box-container">
+        <div class="box-kiri">
+            <img src="gambar/Icon-sd.png" alt="">
+            <h3>Madrasah Ibtidaiyah Muhammadiyah Karanganyar</h3>
+            <p>Saya Bersekolah di MI Muhammadiyah Karanganyar, Jl. Citarum I No.9, Manggeh, Tegalgede, Kec. Karanganyar, Kabupaten Karanganyar, Jawa Tengah</p>
+        </div>
+        <div class="box-tengah">
+            <img src="gambar/Icon-smp.png" alt="">
+            <h3>SMP Muhammadiyah Darul Arqom</h3>
+            <p>Saya Bersekolah di SMP Muhammadiyah Darul Arqom, Jl. AW Monginsidi No.6, Manggeh, Tegalgede, Kec. Karanganyar, Kabupaten Karanganyar, Jawa Tengah</p>
+        </div>
+        <div class="box-kanan">
+            <img src="gambar/Icon-sma.png" alt="">
+            <h3>SMK Negeri 2 Karanganyar</h3>
+            <p>Saya Bersekolah di SMK Negeri 2 Karanganyar, Jl. Yos Sudarso, Jengglong, Bejen, Kec. Karanganyar, Kabupaten Karanganyar, Jawa Tengah</p>
+        </div>
+    </div>
+</div>
+
+<!-- Softskill -->
+<div class="box-softskill" id="softskill">
+    <h1>Softskill</h1> 
+    <div class="box-container">
+        <div class="box-kiri">
+            <img src="gambar/icon-4.png" alt="">
+            <h3>Microsoft</h3>
+            <p>Word, Excel, PowerPoint</p>
+        </div>
+        <div class="box-tengah">
+            <img src="gambar/icon-2.png" alt="">
+            <h3>Teknologi Informasi</h3>
+            <p>Accounting Program</p>
+        </div>
+        <div class="box-kanan">
+            <img src="gambar/icon-5.png" alt="">
+            <h3>Bahasa</h3>
+            <p>Indonesia (aktif), Inggris (pasif)</p>
+        </div>
+    </div>
+</div>
+
+<!-- Prestasi -->
+<div class="box-prestasi" id="prestasi">
+    <h1>Prestasi Saya</h1>
+    <div class="box-container">
+        <div class="box-kiri">
+            <img src="gambar/medali2.png" alt="Prestasi 1">
+            <h3>MLBB</h3>
+            <p>MILAD SMA MUHI 1 KRA</p>
+            <p>Juara 2 Turnamen Mobile Legends</p>
+        </div>
+        <div class="box-tengah">
+            <img src="gambar/medali1.png" alt="Prestasi 2">
+            <h3>MLBB</h3>
+            <p>MILAD SMK MUH 6 KRA</p>
+            <p>Juara 1 Turnamen Mobile Legends</p>
+        </div>
+        <div class="box-kanan">
+            <img src="gambar/medali1.png" alt="Prestasi 3">
+            <h3>MLBB</h3>
+            <p>SMK Bhina Patria 1 Tournamen</p>
+            <p>Juara 1 Turnamen Mobile Legends</p>
+        </div>
+    </div>
+</div>
+
+<!-- Video Perkenalan -->
+<div class="box-video" id="video-perkenalan">
+    <h1>Video Perkenalan</h1>
+    <div class="video-container">
+        <div class="video-wrapper">
+            <iframe 
+                width="315" 
+                height="560" 
+                src="https://www.youtube.com/embed/5QRaa1MigT4" 
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <p>Video perkenalan singkat tentang diri saya</p>
+    </div>
+</div>
+
+<!-- Kontak -->
+<div class="box-kontak" id="kontak">
+    <h1>Hubungi Kontak</h1>
+    <img src="gambar/video-chat.png" alt="">
+    <h2>089517229299</h2>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>Copyright © Yusuf Andika Putra | NIS 9964</p>
+</div>
+
+<!-- Script JS -->
+<script>
+    function toggleMenu() {
+        document.querySelector('.menu').classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>
